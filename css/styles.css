@@ -6,10 +6,24 @@
  *
  */
 
+a{
+    color: #F00;
+}
+
 .cascading-parent{
-    font-weight: bold;
-    color: #FFF;
+    font-size: 22px;
+    color: #F0F;
+    background-color:aqua;
 }  
+
+.cascading-parent h2{
+    color: #CCC;
+}
+
+.cascading-parent a{
+    color: #FD0;
+    font-size: 32px;
+}
 
 .cascading-child{
     font-size: 20px;
@@ -55,6 +69,3 @@ html, body {
     display: inline-block;
 }
 
-a{
-    color: #FF0;
-}
