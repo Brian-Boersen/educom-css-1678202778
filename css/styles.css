@@ -6,6 +6,28 @@
  *
  */
 
+.cascading-parent{
+    font-weight: bold;
+    color: #FFF;
+}  
+
+.cascading-child{
+    font-size: 20px;
+    background-color: #000;
+    width: 200px;
+    height: 200px;
+}
+
+.cascading-child2{
+    background-color: rgba(255, 0, 0, 0.4);
+    width: 100px;
+    height: 100px;
+    font-size: 15px;
+    color: coral;
+    margin-left: 50px;
+    text-align: center;
+}
+
 html, body {
     margin: 0;
     padding: 0;
