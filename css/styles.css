@@ -24,6 +24,9 @@
     --darker-red: #b31714;
     --lighter-red: #dc3439;
 
+    --white: #FFF;
+    --black: #000;
+
     /*image*/
     --reg-img-width: 200px;
     --reg-img-height: 200px;
@@ -31,6 +34,49 @@
     /*text block*/
     --reg-textblock-width: 500px;
     --reg-textblock-height: 200px;
+}
+
+.link-button-container a{
+    width: 200px;
+    padding: 20px;
+
+    /*stops the button going truogh the image*/
+    position: relative;
+    top: 20px;
+
+    color: #FFF;
+    background-color: var(--reg-color);
+
+    /*rounding*/
+    border-radius: 10px;
+
+    /*box-shadow*/
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    
+    /*transition*/
+    transition: all 0.5s ease;
+
+    /*no underline*/
+    text-decoration: none;
+}
+
+.link-button-container a:hover{
+    background-color: #AF1F16 !important;
+    text-decoration: none;
+}
+
+#second-button{
+    background-color: var(--dark-brown);
+}
+
+#third-button{
+    background: linear-gradient(10deg, var(--lighter-red) 0%, var(--darker-red) 34%, var(--dark-brown) 100%);
+}
+
+#third-button:hover{
+    background:linear-gradient(10deg, #AF1F16 0%, #AF1F16 100%);
 }
 
 .standard-img{
