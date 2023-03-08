@@ -1,0 +1,38 @@
+.menu{
+    position:relative;;
+    top: 20px;
+    left: 20px;
+}
+
+.menu-trigger{
+    background-color: #F00;
+    width: 50px;
+    height: 50px;
+
+    cursor: pointer;
+    transition: all 0.4s ease;
+
+    z-index: 5000 !important;
+}
+
+.menu-trigger:hover{
+    background-color: #FFF000;
+}
+
+.menu-trigger:hover .menu-dropdown{
+    top: 0px;
+    transition: all 0.6s ease;
+}
+
+.menu-dropdown{
+    position: fixed;
+    top: 4000px;
+    left: 0px;
+    right: 0px;
+    height: 200px;
+
+    background-color: #FDF;
+
+   
+    padding: 40px;
+}
