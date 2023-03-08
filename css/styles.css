@@ -21,3 +21,18 @@ html, body {
     font-size: 14px;
     display: inline-block;
 }
+
+#person{
+    background-color: #F00;
+    width: 80px;
+    height: 80px;
+    color: green;
+    padding: 20px;
+    margin: 10px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+a{
+    color: #FF0;
+}
