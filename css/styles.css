@@ -10,6 +10,42 @@
     color: #F00;
 }*/
 
+:root{
+    /*font*/
+    --reg-font: "Arial";
+
+    /*color*/
+    --reg-color: purple;
+
+    --dark-brown: #402214;
+    --lighter-brown:  #774231;
+    --lightest-brown: #aa4b1b;
+
+    --darker-red: #b31714;
+    --lighter-red: #dc3439;
+
+    /*image*/
+    --reg-img-width: 200px;
+    --reg-img-height: 200px;
+
+    /*text block*/
+    --reg-textblock-width: 500px;
+    --reg-textblock-height: 200px;
+}
+
+.standard-img{
+    height: var(--reg-img-height);
+    width: var(--reg-img-width);
+}
+
+.op09 h2{
+    color: var(--reg-color);
+}
+
+.op09 p{
+    color: var(--lighter-red);
+    width: var(--reg-textblock-width);
+}
 
 a:visited{
     color:green;
