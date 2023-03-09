@@ -5,31 +5,95 @@ html, body {
 }
 
 .navigation{
-    display: inline-block;
-
     color: black;
     width: 100%;
 
 }
 
 .nav-logo{
-
+    display: inline-block;
+    width: 100px;
+    height: 50px;
 }
 
-.nav-menu{
-    text-align: right;
+.menu{
+    position:relative;
+    top: 10px;
+    float:right;
+    right: 10px;
+}
+
+.menu-trigger{
+    background-color: #F00;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: -10px;
+
+    cursor: pointer;
+    transition: all 0.4s ease;
+
+    background: url(https://w7.pngwing.com/pngs/626/110/png-transparent-black-logo-computer-icons-hamburger-button-menu-new-menu-angle-text-rectangle.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    z-index: 5000 !important;
+}
+
+.menu-trigger:hover{
+
+    -webkit-box-shadow: 0px 0px 250px 0px rgba(0,0,0,0.5) inset;
+    -moz-box-shadow: 0px 0px 250px 0px rgba(0,0,0,0.5)inset;
+    box-shadow:0px 0px 250px 0px rgba(0,0,0,0.5)inset;
+}
+
+.menu-trigger:hover .menu-dropdown{
+    top: 0px;
+    transition: all 0.6s ease;
+}
+
+.menu-dropdown{
+    position: fixed;
+    display: block;
+    top: -400px;
+    left: 0px;
+    right: 0px;
+    height: 100px;
+
+    background-color: #FDF;
+    
+
+    z-index: 5001 !important;
+}
+
+.menu-dropdown div{
+    display: flex;
+    width: 24.78%;
+    border-radius: 10px;
+
+    text-align: center;
+    padding: 40px 0;
+
+    display: inline-block;
+    background-color:rgba(79, 217, 217, 0.525);
+    
+}
+
+.menu-dropdown div a{
+    background-color:rgba(79, 217, 217, 0.525);
 }
 
 /*content*/
 .content{
     display: flex;
-    background-color: #FF0;
+    background-color: white;
     justify-content: center;
     align-items: center;
 
    
     padding: 30px;
-    height: 300px;
+    height: 500px;
 
 }
 
@@ -92,10 +156,11 @@ html, body {
 /*/content*/
 
 .footer{
-    background-color: black;
+    background-color: rgb(53, 53, 53);
     padding: 40px;
 
     color: #FFF;
+
 }
 
 .footer div{
